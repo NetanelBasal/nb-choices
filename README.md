@@ -12,9 +12,14 @@
  - Modern styling
 
 ## Installation
+```
+npm install nb-choices
+yarn add nb-choices
+```
 
-     npm install nb-choices
-     yarn add nb-choices
+## Style
+`@import '~nb-choices/nb-choices.scss'`; 
+
 
  ## Examples
 
@@ -174,7 +179,7 @@ The default configurations for `nb-choices` for selects are:
   noChoicesText: 'No choices to choose from',
   itemSelectText: '',
 }
-    ```
+```
 The default configurations for `nb-choices` for texts are:
 
 ```ts
@@ -217,8 +222,7 @@ providers: [{provide: CHOICES_CONFIG, useValue: { removeItems: false }}]
 
 
 #### Custom Styling
-You can customize the style by modifying directly the `ngx-choices.component.scss`
+You can customize the style by modifying the `nb-choices.scss` and include it in your application. 
 
-----------
 #### TODO
 - Add Tests
