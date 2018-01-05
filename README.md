@@ -160,7 +160,7 @@ ngOnInit() {
 ```
 
 #### Configuration
-The default configurations for `nb-choices` for selects are:
+The default configurations of `nb-choices` for selects are:
 ```ts
 {
   placeholderValue: context.placeholder,
@@ -184,7 +184,7 @@ The default configurations for `nb-choices` for selects are:
   itemSelectText: '',
 }
 ```
-The default configurations for `nb-choices` for texts are:
+The default configurations of `nb-choices` for texts are:
 
 ```ts
 {
