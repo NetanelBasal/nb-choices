@@ -6,7 +6,7 @@
  - Angular forms support
  - Custom Angular templates
  - Placeholder support out of the box
- - Works with the observables and the async pipe
+ - Works with observables and the async pipe
  - Custom checkbox in multiple dropdowns
  - Escaping your HTML out of the box
  - Modern styling
