@@ -150,13 +150,15 @@ ngOnInit() {
 <button (click)="choices.enable()">Enable</button>
 <button (click)="choices.clear()">Reset</button>
 <button (click)="choicesMultiple.clearMultiple()">Reset multiple select</button>
-    ```
+```
 #### Text
+
 ```html
 <choices [text]="true" [items]="textOptions" [formControl]="controText" #choicesText="choices"></choices>
 
 <button (click)="choicesText.clearMultiple()">Reset</button>
 ```
+
 #### Configuration
 The default configurations for `nb-choices` for selects are:
 ```ts
