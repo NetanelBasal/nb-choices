@@ -1,5 +1,5 @@
 ## 📢 Angular Choices 
-**Angular wrapper for choices.js ** - vanilla, lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency.
+** Angular wrapper for choices.js ** - vanilla, lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency.
 
 ## 🍭 Features
 
