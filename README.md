@@ -10,6 +10,8 @@
  - Custom checkbox in multiple dropdowns
  - Escaping your HTML out of the box
  - Modern styling
+ 
+![Demo](https://s18.postimg.org/6z2aazzwp/choices-demo.gif)
 
 ## Installation
 ```
