@@ -28,8 +28,8 @@ yarn add nb-choices
 #### Single Select
 ```html
 <choices [formControl]="control"
-        [choices]="options"
-        placeholder="Choose..."></choices>
+         [choices]="options"
+         placeholder="Choose..."></choices>
 
 ```
 
