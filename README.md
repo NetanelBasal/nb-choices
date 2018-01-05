@@ -20,41 +20,46 @@
 
 #### Single Select
 ```html
-     <choices [formControl]="control"
-              [choices]="options"
-              placeholder="Choose..."></choices>
+<choices [formControl]="control"
+        [choices]="options"
+        placeholder="Choose..."></choices>
 
 ```
 
 
 #### Single Select - Combo box
-     <choices [formControl]="control"
-              [isCombo]="true"
-              [choices]="options"
-              placeholder="Choose..."></choices>
+```html
+ <choices [formControl]="control"
+          [isCombo]="true"
+          [choices]="options"
+          placeholder="Choose..."></choices>
+```
+
               
 #### Single Select - Group
-    this.options = [{
-      label: 'Group one',
-      id: 1,
-      choices: [
-        { value: 'Child One', label: 'Child One' },
-        { value: 'Child Two', label: 'Child Two' },
-      ]
-     },
-      {
-        label: 'Group two',
-        id: 2,
-        choices: [
-          { value: 'Child Four', label: 'Child Three' },
-          { value: 'Child Five', label: 'Child Four' },
-        ]
-      }];
-      
-    <choices [formControl]="control"
-                    [choices]="options"
-                    placeholder="Choose..."></choices>
-
+```ts
+this.options = [{
+  label: 'Group one',
+  id: 1,
+  choices: [
+    { value: 'Child One', label: 'Child One' },
+    { value: 'Child Two', label: 'Child Two' },
+  ]
+ },
+ {
+   label: 'Group two',
+   id: 2,
+   choices: [
+     { value: 'Child Four', label: 'Child Three' },
+     { value: 'Child Five', label: 'Child Four' },
+   ]
+}];
+```
+```html
+<choices [formControl]="control"
+         [choices]="options"
+         placeholder="Choose..."></choices>
+```
 
 
 #### With Custom Template
