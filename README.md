@@ -19,9 +19,13 @@
  ## Examples
 
 #### Single Select
+```html
      <choices [formControl]="control"
               [choices]="options"
               placeholder="Choose..."></choices>
+
+```
+
 
 #### Single Select - Combo box
      <choices [formControl]="control"
