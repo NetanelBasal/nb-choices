@@ -9,6 +9,7 @@ export abstract class ChoiceTemplate implements OnInit {
   @Input() tpl: TemplateRef<any>;
   @Input() withCheckbox: boolean = false;
   @Input() config: Choices.Options;
+  @Input() isMultiple: boolean = false;
 
   abstract get getClass();
 
