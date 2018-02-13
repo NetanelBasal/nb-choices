@@ -512,7 +512,7 @@ export class ChoicesComponent implements OnInit, OnDestroy, ControlValueAccessor
    *
    * @param classNames
    * @param data
-   * @param {boolean} isMulti
+   * @param {boolean} isMultiple
    * @param {string} type
    * @private
    */
@@ -533,7 +533,7 @@ export class ChoicesComponent implements OnInit, OnDestroy, ControlValueAccessor
     component.instance.tpl = that.choiceTemplate;
     component.instance.withCheckbox = that.withCheckbox;
     component.instance.config = this._config;
-    (component.instance as CustomChoiceSelectedComponent).isMulti = isMulti;
+    (component.instance as CustomChoiceSelectedComponent).isMultiple = isMulti;
     component.changeDetectorRef.detectChanges();
     const HTML = component.location.nativeElement.innerHTML;
     this._elementsMap.set(seralizeData, HTML);

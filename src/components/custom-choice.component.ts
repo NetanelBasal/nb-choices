@@ -32,7 +32,7 @@ export abstract class ChoiceTemplate implements OnInit {
          [attr.aria-disabled]="data.disabled"
          [attr.role]="data.groupId > 0 ? 'treeitem' : 'option'">
       <ng-container *ngTemplateOutlet="tpl;context: contextExp"></ng-container>
-      <span *ngIf="isMulti && withCheckbox" [class.choices__checkbox--selected]="data.selected"
+      <span *ngIf="isMultiple && withCheckbox" [class.choices__checkbox--selected]="data.selected"
             class="choices__checkbox"></span>
       <ng-container *ngIf="!tpl">{{data.label}}</ng-container>
     </div>
@@ -61,14 +61,13 @@ export class CustomChoiceComponent extends ChoiceTemplate implements OnInit {
          [attr.aria-disabled]="data.disabled">
       <ng-container *ngTemplateOutlet="tpl;context: contextExp"></ng-container>
       <ng-container *ngIf="!tpl">{{data.label}}</ng-container>
-      <button type="button" class="choices__button" data-button *ngIf="isMulti && config.removeItemButton">
+      <button type="button" class="choices__button" data-button *ngIf="isMultiple && config.removeItemButton">
         Remove item
       </button>
     </div>
   `
 })
 export class CustomChoiceSelectedComponent extends ChoiceTemplate implements OnInit {
-  @Input() isMulti: boolean = false;
 
   get getClass() {
     return {
