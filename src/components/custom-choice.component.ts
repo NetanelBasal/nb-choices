@@ -9,6 +9,7 @@ export abstract class ChoiceTemplate implements OnInit {
   @Input() tpl: TemplateRef<any>;
   @Input() withCheckbox: boolean = false;
   @Input() config: Choices.Options;
+  @Input() isMultiple: boolean = false;
 
   abstract get getClass();
 
@@ -38,9 +39,6 @@ export abstract class ChoiceTemplate implements OnInit {
   `
 })
 export class CustomChoiceComponent extends ChoiceTemplate implements OnInit {
-
-  @Input() isMultiple: boolean = false;
-
   get getClass() {
     return {
       [this.classNames.itemDisabled]: this.data.disabled,
@@ -69,9 +67,6 @@ export class CustomChoiceComponent extends ChoiceTemplate implements OnInit {
   `
 })
 export class CustomChoiceSelectedComponent extends ChoiceTemplate implements OnInit {
-
-  @Input() isMultiple: boolean = false;
-  
   get getClass() {
     return {
       [this.classNames.highlightedState]: this.data.highlighted,
