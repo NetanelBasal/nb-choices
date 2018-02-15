@@ -1,6 +1,6 @@
 {
   "name": "nb-choices",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular wrapper for choices.js, vanilla, lightweight, configurable select box/text input plugin",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
