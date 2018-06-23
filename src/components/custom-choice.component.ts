@@ -4,11 +4,11 @@ import * as Choices from 'choices.js';
 export abstract class ChoiceTemplate implements OnInit {
   contextExp: { $implicit: any };
 
-  @Input() classNames: Choices.ClassNames;
-  @Input() data: Choices.Choice;
+  @Input() classNames: any;
+  @Input() data: any;
   @Input() tpl: TemplateRef<any>;
   @Input() withCheckbox: boolean = false;
-  @Input() config: Choices.Options;
+  @Input() config: any;
   @Input() isMultiple: boolean = false;
 
   abstract get getClass();
